@@ -30,3 +30,18 @@ input{
     text-align:center;
     width: 5rem;
 }
+
+h1{
+    color:blue;
+    text-shadow: brown 3px 3px;
+}
+p{
+    color: rebeccapurple;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#diceImages img{
+    width: 100px;
+    margin: 25px;
+    
+}
