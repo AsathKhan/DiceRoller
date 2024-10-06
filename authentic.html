@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Captcha</title>
+    <link rel="stylesheet" href="authentic.css">
     <script src="home.js"> </script>
 </head>
 <body>
-    <div id="'container">
+    <div id="container">
         <h1> Verify that you are not a robot...</h1>
-        <label id="resultCaptcha"></label>
-        <button id="generateCaptchaBtn" for="resultCaptcha" onclick="generateCaptcha()">Generate Captcha</button><br>
+        <center><label id="resultCaptcha"></label></center><br><br>
+        <button id="generateCaptchaBtn" for="resultCaptcha" onclick="generateCaptcha()">Generate Captcha</button><br><br>
         <input id="verifyCaptcha">
         <button id="verifyCaptchaBtn" onclick="verify()">Verify</button>
     </div>
