@@ -14,10 +14,14 @@ function rollDice(){
 }
 
 //authentic.html
+let currentCaptcha ='';
 function generateCaptcha(){
 
-const captchaLength = 8;
-const incNumbers = true, incLowerAlphabets = true, incUpperAlphabets = true, incSymbols = true;
+const captchaLength = 6;
+const   incNumbers = true, 
+        incLowerAlphabets = true, 
+        incUpperAlphabets = true, 
+        incSymbols = true;
 
 const numbers = '0123456789';
 const lowerAlphabets = 'abcdefghijklmnopqrstuvwxyz';
@@ -30,13 +34,29 @@ allowedChar += incNumbers ? numbers : '';
 allowedChar += incLowerAlphabets ? lowerAlphabets : '';
 allowedChar += incUpperAlphabets ? upperAlphabets : '';
 allowedChar += incSymbols ? symbols : '';
-console.log(allowedChar);
 
-for(i=0; i<=captchaLength; i++){
+let captcha = '';
+
+for(i=0; i<captchaLength; i++){
     randomIndex = Math.floor(Math.random()*allowedChar.length);
-    console.log(randomIndex);
+    captcha += allowedChar[randomIndex];
+}     
+    document.getElementById('resultCaptcha').textContent = captcha;
+    currentCaptcha = captcha; 
 }
 
-}
 
-generateCaptcha();
+function verify(){
+    const verifyCaptcha = document.getElementById('verifyCaptcha').value;
+    if (verifyCaptcha === ''){
+        alert('Please enter the captcha');
+        return;
+    }
+    if (verifyCaptcha === currentCaptcha){
+        //flag
+        localStorage.setItem('captchaVerified', 'true');
+        window.location.href = 'home.html';
+    }else{
+        alert(`Captcha verification failed`);
+    }
+}

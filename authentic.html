@@ -4,18 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="home.js"> </script>
 </head>
 <body>
     <div id="'container">
         <h1> Verify that you are not a robot...</h1>
         <label id="resultCaptcha"></label>
-        <button id="generateCaptchaBtn" onclick="generateCaptcha()">Generate Captcha</button><br>
+        <button id="generateCaptchaBtn" for="resultCaptcha" onclick="generateCaptcha()">Generate Captcha</button><br>
         <input id="verifyCaptcha">
-        <button id="verifyCaptchaBtn" onclick="">Verify</button>
-
-
+        <button id="verifyCaptchaBtn" onclick="verify()">Verify</button>
     </div>
-
-    <script src="home.js"> </script>
 </body>
 </html>
