@@ -55,6 +55,11 @@ function verify(){
     if (verifyCaptcha === currentCaptcha){
         //flag
         localStorage.setItem('captchaVerified', 'true');
+
+        //catptcha Expiry
+        const expiryTime = new Date().getTime() + 5 * 60 * 1000;
+        localStorage.setItem('captchaExpiry', expiryTime);
+
         window.location.href = 'home.html';
     }else{
         alert(`Captcha verification failed`);

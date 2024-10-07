@@ -40,8 +40,12 @@ p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+#diceImages{
+    background-color: rgb(226, 220, 212);
+    max-width: fit-content;
+}
+
 #diceImages img{
     width: 100px;
-    margin: 25px;
-    
+    margin: 25px;   
 }
