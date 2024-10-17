@@ -1,4 +1,6 @@
-![image](https://github.com/user-attachments/assets/a121f2c4-d7b2-42b8-9159-49f46cb6ff77)
+Verify Captcha to move into the dice page. Also, included the present time.
+![image](https://github.com/user-attachments/assets/42789be3-1aeb-433a-a721-4a0b1be2fac2)
+
 
 ![image](https://github.com/user-attachments/assets/b712bb89-4966-4b53-ac64-a94ae8a4c07c)
 
