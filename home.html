@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DiceRoller</title>
     <link rel="stylesheet" href="home.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <div id="container">
@@ -22,7 +22,7 @@
             const captchaVerified = localStorage.getItem('captchaVerified');
             const captchaExpiry = localStorage.getItem('captchaExpiry');
 
-            if (captchaVerified !=='true' || !captchaExpiry || new Date.getTime() > parseInt(captchaExpiry)){
+            if (captchaVerified !=='true' || !captchaExpiry || new Date() .getTime() > parseInt(captchaExpiry)){
                 window.location.href = 'authentic.html';
             }
         });

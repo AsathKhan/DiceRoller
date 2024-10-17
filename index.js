@@ -65,3 +65,18 @@ function verify(){
         alert(`Captcha verification failed`);
     }
 }
+
+function updateClock(){
+    const now = new Date();
+    let hours = now.getHours();
+    const meridiem = hours >=12 ? "PM" : "AM";
+    hours = hours % 12 || 12;
+    hours = hours.toString().padStart(2, 0);
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    let timeString = `${hours}:${minutes}:${seconds}`;
+
+    document.getElementById("clock").innerHTML = `${timeString} <span class="meridiem">${meridiem}</span>` ;
+}
+updateClock();
+setInterval(updateClock, 1000);
