@@ -1,7 +1,13 @@
 body{
+    background-image: url(Images/hand.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    margin: 0;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,4 +29,25 @@ body{
 
 .choices button:hover{
     background-color: green;
+}
+
+#playerDisplay, #computerDisplay{
+    font-size: 3rem;
+}
+
+#resultDisplay{
+    font-size: 5rem;
+    margin: 30px 0;
+}
+
+.scoreDisplay{
+    font-size: 2rem;
+}
+
+.greenText, #playerScoreDisplay{
+    color: rgb(114, 191, 114);
+}
+
+.redText, #computerScoreDisplay{
+    color: red;
 }
