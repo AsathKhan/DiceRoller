@@ -1,6 +1,7 @@
-![image](https://github.com/user-attachments/assets/a121f2c4-d7b2-42b8-9159-49f46cb6ff77)
+![image](https://github.com/user-attachments/assets/1e20ff6e-23b3-4f8a-be30-863dfde937be)
 
-![image](https://github.com/user-attachments/assets/b712bb89-4966-4b53-ac64-a94ae8a4c07c)
+Rock-paper-scissors
+![image](https://github.com/user-attachments/assets/560afc5d-8fe3-4919-957c-a6fdfc9172a2)
 
 Generates random numbers below 7 and exact dice for random numbers.
 ![image](https://github.com/user-attachments/assets/82afa4dc-e89e-40a8-aec4-112c27eace9f)
